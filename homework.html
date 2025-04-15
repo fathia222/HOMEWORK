@@ -10,11 +10,25 @@
   </head>
   <style>
     * {
-      margin: 0;
-      padding: 0;
+      margin: 0 0;
+      padding: 0.1rem; 
       box-sizing: border-box;
     }
-    .nav-bar {
+    body{
+      font-family:Georgia, 'Times New Roman', Times, serif
+      line-height: 1.6;
+      trasition:all o.3s ease;
+      background:white;
+      
+    }
+    header{
+      background-color: white;
+      position: fixed;
+      z-index: 1000;
+      top: 10px;
+     transition: all 0.3s ease;
+    }
+    nav {
       display: flex;
       margin: 5px;
       padding: 10px;
@@ -22,34 +36,49 @@
       width: 100%;
       z-index: 1000;
       transition: all 0.5s ease;
-      background: whitesmoke;
+      background: rgb(122, 122, 122);
       gap: 4rem;
       font-weight: 500;
+      height:50px;
+      margin-top: 0;
+      margin-left: 0;
     }
     .logo {
       color: rgb(29, 71, 29);
-      font-size: 1rem;
-      font-weight: 700;
-      gap: 0.5rem;
+      font-size: 15px;
+      font-weight: 400;
+      gap: 0.3rem;
+      display: flex;
     }
     .nav-links {
       position: relative;
       gap: 2rem;
       max-width: 1200px;
-      margin: 0 auto;
+      margin: 0 ;
     }
+    .logo i{
+      size: 50px;
+    }
+    /* #circle{
+      background: blue;
+      border-radius: 50%;
+      width: 30px;
+      height: 20px
+    } */
+
+    
   </style>
   <body>
     <header>
       <nav>
-        <div class="nav-bar">
+        
           <div class="logo">
             <i class="fas fa-shirt"></i>
 
             <h1>VOGUE ME</h1>
           </div>
 
-          <div class="nav-links">
+          <ul class="nav-links">
             <select>
               <option value="our collections">Our collections</option>
               <option value="view collection">View collections</option>
@@ -63,10 +92,13 @@
             </select>
             Pricing
           </div>
-          <div class="button">
-            <input type="submit" value="Login" />
-            <input type="submit" value="Shop now" />
+         <class="button">
+            
+            <input type="submit" value="Login" class="btn a">
+              <input type="submit" value="Shop now"  class="btn b"/>
+             
           </div>
+          </ul>
         </div>
       </nav>
       <main>
@@ -77,6 +109,12 @@
             </p>
           </h1>
           <h3>Your Ultimate Destination For Stylish And Trendy Clothes</h3>
+          <class="button">
+            
+              
+              <input type="submit" value="order now" class="btn b">
+              <input type="submit" value="Book appointment" class="btn a">
+            
         </section>
       </main>
     </header>
