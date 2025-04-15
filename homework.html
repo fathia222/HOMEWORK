@@ -8,14 +8,47 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .nav-bar {
+      display: flex;
+      margin: 5px;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      transition: all 0.5s ease;
+      background: whitesmoke;
+      gap: 4rem;
+      font-weight: 500;
+    }
+    .logo {
+      color: rgb(29, 71, 29);
+      font-size: 1rem;
+      font-weight: 700;
+      gap: 0.5rem;
+    }
+    .nav-links {
+      position: relative;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  </style>
   <body>
     <header>
       <nav>
         <div class="nav-bar">
           <div class="logo">
             <i class="fas fa-shirt"></i>
+
             <h1>VOGUE ME</h1>
           </div>
+
           <div class="nav-links">
             <select>
               <option value="our collections">Our collections</option>
@@ -31,11 +64,21 @@
             Pricing
           </div>
           <div class="button">
-            login
-            <a href="/"></a>
+            <input type="submit" value="Login" />
+            <input type="submit" value="Shop now" />
           </div>
         </div>
       </nav>
+      <main>
+        <section id="home">
+          <h1>
+            <p>
+              <strong> Welcome To Vogue Me,Where Fashion Meets Arts </strong>
+            </p>
+          </h1>
+          <h3>Your Ultimate Destination For Stylish And Trendy Clothes</h3>
+        </section>
+      </main>
     </header>
   </body>
 </html>
