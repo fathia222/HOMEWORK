@@ -10,28 +10,29 @@
   </head>
   <style>
     * {
-      margin: 0 0;
-      padding: 0.1rem; 
+      margin: 0 ;
+      padding: 0; 
       box-sizing: border-box;
     }
     body{
-      font-family:Georgia, 'Times New Roman', Times, serif
-      line-height: 1.6;
-      trasition:all o.3s ease;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      /* line-height: 1.6; */
+      /* transition:all o.3s ease; */
       background:white;
+      width: 100%;
       
     }
     header{
       background-color: white;
       position: fixed;
       z-index: 1000;
-      top: 10px;
+      top: 0px;
      transition: all 0.3s ease;
     }
-    nav {
+    #nav {
       display: flex;
-      margin: 5px;
-      padding: 10px;
+      margin: 0px;
+      padding: 5px;
       position: fixed;
       width: 100%;
       z-index: 1000;
@@ -40,14 +41,13 @@
       gap: 4rem;
       font-weight: 500;
       height:50px;
-      margin-top: 0;
-      margin-left: 0;
+      
     }
     .logo {
       color: rgb(29, 71, 29);
       font-size: 15px;
       font-weight: 400;
-      gap: 0.3rem;
+      gap: 0.2rem;
       display: flex;
     }
     .nav-links {
@@ -56,8 +56,8 @@
       max-width: 1200px;
       margin: 0 ;
     }
-    .logo i{
-      size: 50px;
+    #logo {
+      size: 90px;
     }
     /* #circle{
       background: blue;
@@ -65,18 +65,35 @@
       width: 30px;
       height: 20px
     } */
-
-    
+   #home{
+    background-image: url( 9b025120-d28c-42a4-8953-02992f8c74b0.webp);
+    background-size:cover;
+    background-position:center;
+    height:70vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+   }
+    h1{
+      color: green;
+      
+    }
+  
   </style>
   <body>
-    <header>
-      <nav>
-        
-          <div class="logo">
+    <section id="nav">
+    <!-- <header> -->
+      <!-- <nav> -->
+        <!-- <div class="container"> -->
+          <class="logo">
             <i class="fas fa-shirt"></i>
 
-            <h1>VOGUE ME</h1>
-          </div>
+            <h1>VOGUE ME</h1></class>
+          <!-- </div> -->
 
           <ul class="nav-links">
             <select>
@@ -91,32 +108,36 @@
               <option value="we design">We design</option>
             </select>
             Pricing
-          </div>
+          <!-- </div> -->
          <class="button">
             
-            <input type="submit" value="Login" class="btn a">
-              <input type="submit" value="Shop now"  class="btn b"/>
-             
-          </div>
-          </ul>
-        </div>
-      </nav>
-      <main>
+           <button><input type="submit" value="Login" class="btn a">
+              <input type="submit" value="Shop now"  class="btn b"/></button>
+        </section>
+          <!-- </div> -->
+          <!-- </ul> -->
+        
+      <!-- </nav> -->
+      <!-- <main> -->
         <section id="home">
+          <button>
+            <input type="submit" value="View our collections" >
+          </button>
           <h1>
             <p>
               <strong> Welcome To Vogue Me,Where Fashion Meets Arts </strong>
             </p>
           </h1>
-          <h3>Your Ultimate Destination For Stylish And Trendy Clothes</h3>
+          Your Ultimate Destination For Stylish And Trendy Clothes
           <class="button">
             
               
-              <input type="submit" value="order now" class="btn b">
-              <input type="submit" value="Book appointment" class="btn a">
+             <button> <input type="submit" value="order now" class="btn b">
+              <input type="submit" value="Book appointment" class="btn a"></button>
             
         </section>
-      </main>
+      <!-- </main> -->
     </header>
   </body>
+</div>
 </html>
