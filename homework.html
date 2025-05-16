@@ -10,55 +10,104 @@
   </head>
   <style>
     * {
-      margin: 0 ;
+      margin: 0;
       padding: 0; 
-      box-sizing: border-box;
+      box-sizing:border-box  ;
     }
     body{
       font-family:Georgia, 'Times New Roman', Times, serif;
-      /* line-height: 1.6; */
-      /* transition:all o.3s ease; */
+      line-height: 1.2; 
+      transition:all o.3s ease;
       background:white;
+      width: 100%;  
+      border-radius: 20px ;
+      margin:10px;
+    }
+    #nav{
+      display: flex;
+      transition: all 0.3s ease;
+      padding:1 rem;
+      margin: 0 auto;
+      max-width:   1500px ;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    /* .i{
+      color: green;
+    } */
+    
+    /* header{
+      background-color: transparent;
+      position: relative;
+      z-index: 100;
+      transition: all 0.3s ease;
+     display: flex;
+     width: 100%;
+     height: 10%;
+     margin: 0 ;
+    } */
+    /* .nav-links{
+      display: flex;
       width: 100%;
-      
-    }
-    header{
-      background-color: white;
-      position: fixed;
-      z-index: 1000;
-      top: 0px;
-     transition: all 0.3s ease;
-    }
-    #nav {
+      position: relative;
+      margin: 0  ;
+    } */
+    /* #nav {
       display: flex;
       margin: 0px;
-      padding: 5px;
-      position: fixed;
+      /* padding: 5px; */
+      /* position: fixed;
       width: 100%;
       z-index: 1000;
       transition: all 0.5s ease;
-      background: rgb(122, 122, 122);
-      gap: 4rem;
+      background: transparent;
+      gap: 3rem;
       font-weight: 500;
-      height:50px;
-      
-    }
-    .logo {
+      height:30px;
+   }
+   .nav-lists{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: o auto ;
+    transform: all 0.3s ease;
+    flex-direction: row;
+    padding: 5px ;
+    align-items: center;
+   } */ */
+      /* .brands i{
+        size: 50px;
+
+      } */
+    
+    /* .container{
+      display: flex;
+      position: relative;
+       /* display: flex; */
+      /* margin: 0px; */
+      /* padding: 5px; */
+      /* position: fixed; */
+      /* width: 100%;
+      z-index: 1000;
+      transition: all 0.5s ease;
+      background: transparent;
+      gap: 5px;
+      font-weight: 500;
+      height:30px;
+      align-items: normal;
+    }  */ */
+  /* .logo {
       color: rgb(29, 71, 29);
       font-size: 15px;
       font-weight: 400;
       gap: 0.2rem;
       display: flex;
     }
-    .nav-links {
-      position: relative;
-      gap: 2rem;
-      max-width: 1200px;
-      margin: 0 ;
-    }
-    #logo {
+    
+    /* #logo {
       size: 90px;
-    }
+    } */
     /* #circle{
       background: blue;
       border-radius: 50%;
@@ -82,62 +131,281 @@
       color: green;
       
     }
+    .dot{
+      width: 50px;
+      height:50px;
+      background-image: url(Downloads/andrey-k-mhXosVjM23E-unsplash.jpg) height="5px" width="3px";
+      background-color: white;
+    
+      border-radius: 50%;
+       display: inline-block;}
+
+
+  /* #button{
+    border-radius: 20px;
+    display: inline-block;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    color:green;
+    font-size: 1.6rem;
+  } */
+  .text{
+    background-color: white;
+    display: inline-flex;
+    flex-direction: column;
+    font: 1em sans-serif;
+    height: 100%;
+    width:100%;
+    column-gap: 60px;
+    position: center;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  .chart{
+    border-radius: 20px;
+   display: inline-flex;
+flex-direction: column;
+background-color: rgb(152, 158, 158);
+/* max-width:8oopx ; */
+margin: 0 auto;
+text-align: left;
+position: relative;
+width:100% ;
+height: 30%;
+
+  }
+  .bar{
+    display: flex;
+    width: 500px;
+    height: 400px;
+    flex-direction:column-reverse;
+    background-color: white;
+    border-radius: 20px;
+    text-align: right;
+  }
+  .column{
+    float: left;
+    width: 50%;
+    background-color: rgb(152, 152, 152);
+  }
+  .row{
+    display: flex;
+  }
+  .start{
+    box-sizing: border-box;
+    background-color: green;
+    /* position:static; */
+    /* padding:10px  ; */
+     margin:60px ;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  }
+.brands{
+   box-sizing:border-box ;
+   background-color: white;
+   border-radius: 5px;
+   padding: 10px 20px;
+   margin:10px auto;
   
+   width: 40px;
+   position: relative;
+   align-items:self-start;
+   z-index: 1;
+   gap:20px;
+   height: 40px;
+   
+}
+h2{
+color: green;
+}
+.abt{
+  position: relative;
+  text-align: center;
+  text-size-adjust: 20px;
+  font-size: x-large;
+  color: green;
+}
+.reviews{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  background: rgb(204, 202, 202);
+  height: 70px;
+  color:rgb(9, 164, 9);
+  font-size: x-large;
+  font-weight: 500px;
+  border-radius: 5px;
+  padding:10px;
+  margin: 60px;
+  box-sizing: border-box;
+  position: relative;
+}
   </style>
   <body>
     <section id="nav">
-    <!-- <header> -->
-      <!-- <nav> -->
-        <!-- <div class="container"> -->
-          <class="logo">
-            <i class="fas fa-shirt"></i>
-
-            <h1>VOGUE ME</h1></class>
-          <!-- </div> -->
-
-          <ul class="nav-links">
+    <header>
+      
+         <div class="container">
+           <h1> <i class="fas fa-shirt"></i>VOGUE ME</h1>
+          <!-- <div class="nav-links"> -->
+            <!-- <div class="nav-lists"> -->
             <select>
-              <option value="our collections">Our collections</option>
-              <option value="view collection">View collections</option>
-              <option value="shop now">Shop now</option>
+            <a href="#" > <option value=" our collections">Our collections</option> </a>
+            <a href="#"> <option value="view collection">View collections</option></a>
+              <a href="#"> <option value="shop now">Shop now</option></a>
             </select>
-
             <select>
               <h3><option value=" Services">Services</option></h3>
               <option value="we sell">We sell</option>
               <option value="we design">We design</option>
-            </select>
-            Pricing
+            </select></a>    
+                   <a href="#"> Pricing</a>
+            </div>
+          
+        <!-- <div class="btn"> -->
+           <button> <input type="submit" value="Login" ></button>
+              <button><input type="submit" value="Shop now"  style="background-color: green;"></button>
           <!-- </div> -->
-         <class="button">
-            
-           <button><input type="submit" value="Login" class="btn a">
-              <input type="submit" value="Shop now"  class="btn b"/></button>
+      </div>
         </section>
-          <!-- </div> -->
-          <!-- </ul> -->
-        
-      <!-- </nav> -->
-      <!-- <main> -->
+          <main>
         <section id="home">
-          <button>
-            <input type="submit" value="View our collections" >
-          </button>
           <h1>
             <p>
-              <strong> Welcome To Vogue Me,Where Fashion Meets Arts </strong>
+              <b> Welcome To Vogue Me,Where Fashion Meets Arts </b>
             </p>
           </h1>
           Your Ultimate Destination For Stylish And Trendy Clothes
           <class="button">
             
               
-             <button> <input type="submit" value="order now" class="btn b">
+             <input type="submit" value="order now" style="background-color: green;">
               <input type="submit" value="Book appointment" class="btn a"></button>
+              <span class="dot" ></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
             
         </section>
-      <!-- </main> -->
+        
+          <!-- <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span> -->
+        </div>
+      
     </header>
+  
+
+  </section>
+  <div class="after">
+    <div class="text">
+   <h2><b>LET'S ROCK THE WORLD  TOGETHER</b></h2>
+    <pre>find the unique cloth that match your taste to rock any occassion</pre></div>
+    <div class="row"><div class="column"><h2>
+      Our Vision
+    </h2>
+  Our goal is to make you look stunning and beautiful in our one-of-a-kind dress
+  <button>
+    <input type="submit" value="Go to shop" style="background-color:green;" >
+  </button></div>
+  <div class="column">
+    <img src="pictograph---teachoo.jpg">
+  </div>
+  </div>
+  <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </label>
+  </div>
+  
+  <div class="start">
+    <h3 style="color:white">View Our Collections</h3>
+ <i>You can access our designs and collections on any of these page</i>
+  <div class="brands" style="color:blue; align-items: center;">
+    <i  class="fa-brands fa-facebook"></i>
+ </div>
+  <div class="brands" style="color:red ";>
+    <i class="fa-brands fa-google"></i>
+   </div>
+  <div class="brands" style="background-color: white; color:blue">
+    <i class="fa-brands fa-linkedin"></i>
+   </div>
+  <div class="brands"style="black">
+    <i class="fa-brands fa-tiktok"></i> 
+     </div>
+  <div class="brands"style="color:orange">
+    <i class="fa-brands fa-instagram"></i>
+   </div>
+  <div class="brands" style="color: red;">
+    <i class="fa-brands fa-pinterest"></i>
+   </div>
+  <div class="brands">
+    <i class="fa-brands fa-twitter"></i>
+   </div>
+  <div class="brands" style="color:red">
+    <i class="fa-brands fa-youtube"></i>
+   </div>
+  <div class="brands" style="color:rgb(246, 246, 7)">
+    <i class="fa-brands fa-snapchat"></i>
+   </div>
+  <div class="brands" style="color;red">
+    <i class="fa-brands fa-opera"></i>
+   </div>
+  <div class="brands" style="color:green">
+    <i class="fa-brands fa-whatsapp"></i>
+   </div>
+  <div class="brands" style="color: rgb(56, 56, 179);">
+    <i class="fa-brands fa-edge"></i>
+  </div>
+  <div class="brands">
+    <i class="fa-brands fa-google-drive"></i>
+   </div>
+  <div class="brands">
+    <i class="fa-brands fa-figma"></i>
+   </div>
+  <div class="brands">
+    <i class="fa-brands fa-internet-explorer"></i>
+   </div>
+  <div class="brands">
+    <i class="fa-brands fa-shopware"></i>
+  </div>
+  </div>
+  <div class="abt">
+    "
+    <p>Step into style,Find your perfect fit with our expertly crafted garments</p>"
+  </div>
+  <div class="reviews">
+    <div class="year">
+      2021<p>
+        Vogue me founded
+      </p>
+    </div>
+    <div class="users">
+50k+<p>
+  Active users
+</p>
+    </div>
+    <div class="nos">
+
+    1k+<p>
+      company reviews
+    </p></div>
+  </div>
+  <div class="discover">
+    Discover the full scale of Vogue me Dresses
+    <botton>
+      <input type="submit" value="Get a dress" style="background: white;"
+    </botton>
+    <botton>
+     <input type="submit" value="View in store" style="background: green;">
+    </botton>
+  </div>
   </body>
 </div>
 </html>
